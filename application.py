@@ -1,12 +1,6 @@
-from flask import Flask
+from dateapp import app as application
 
-application = Flask(__name__)
 
-@application.route('/')
-def hello():
-	return "Hello World"
-
-# run the app.
 if __name__ == "__main__":
 	application.debug = True
 	application.run()
