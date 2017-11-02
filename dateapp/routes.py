@@ -1,3 +1,8 @@
 from . import app
 import datetime
 from flask import request, render_template
+
+
+@app.route('/')
+def home():
+	return render_template("index.html")
